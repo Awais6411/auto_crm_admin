@@ -77,7 +77,10 @@ class AuctioneerHelper {
 
     var uri = Uri.parse(url);
     Map<String, String> headers = {'Content-Type': 'application/json'};
-    Map<String, dynamic> mapObj = {'auctioneerId': 5, 'weekId': 49};
+    Map<String, dynamic> mapObj = {
+      'auctioneerId': auctioneerId,
+      'weekId': weekId
+    };
 
     try {
       var response =
