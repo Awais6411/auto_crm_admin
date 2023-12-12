@@ -107,9 +107,9 @@ class AuctioneerHelper {
     var uri = Uri.parse(url);
     Map<String, String> headers = {'Content-Type': 'application/json'};
     Map<String, dynamic> mapObject = {
-      "auctioneer_id": 1,
-      "user_id": 1,
-      "weekId": 50,
+      "auctioneer_id": auctioneerId,
+      "user_id": userId,
+      "weekId": weekId,
     };
     http.Response response =
         await client.post(uri, headers: headers, body: jsonEncode(mapObject));
